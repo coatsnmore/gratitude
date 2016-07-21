@@ -24,12 +24,21 @@ The previous command shows version, installs necessary dependencies and runs a d
 
 # links
 
-## simple documentdb example
+## azure and documentdb
 
 https://github.com/Azure/azure-documentdb-node
 
 https://azure.microsoft.com/en-us/documentation/articles/documentdb-nodejs-application/
 
+https://azure.microsoft.com/en-us/documentation/articles/app-service-web-nodejs-get-started/
+
+
 ## build stuff
 
 http://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool
+
+https://github.com/remy/nodemon
+
+## express stuff
+
+https://expressjs.com/en/starter/generator.html

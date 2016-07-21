@@ -15,7 +15,12 @@ var bodyParser = require('body-parser');
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+// app.set('views', path.join(__dirname, 'views'));
+// app.engine('html', require('ejs').renderFile);
+// app.set('view engine', 'html');
+// app.engine('html', require('ejs').renderFile);
+// app.set('view engine', 'html');
+app.use(express.static(__dirname + '/public'));
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -23,7 +28,8 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static('public'));
+app.use(express.static('public'));
 
 var docDbClient = new DocumentDBClient(config.host, {
     masterKey: config.authKey
@@ -32,9 +38,9 @@ var taskDao = new TaskDao(docDbClient, config.databaseId, config.collectionId);
 var taskList = new TaskList(taskDao);
 taskDao.init();
 
-app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + 'index.html'));
-});
+// app.get('/', function(req, res) {
+//     res.sendFile(path.join(__dirname + 'index.html'));
+// });
 
 app.get('/api/tasks', taskList.showTasks.bind(taskList));
 // app.post('/addtask', taskList.addTask.bind(taskList));
@@ -54,22 +60,24 @@ app.use(function(req, res, next) {
 // will print stacktrace
 if (app.get('env') === 'development') {
   app.use(function(err, req, res, next) {
-    res.status(err.status || 500);
-    res.render('error', {
-      message: err.message,
-      error: err
-    });
+    // res.status(err.status || 500);
+    // res.render('error', {
+    //   message: err.message,
+    //   error: err
+    // });
+    console.error(err);
   });
 }
 
-// production error handler
-// no stacktraces leaked to user
+// // production error handler
+// // no stacktraces leaked to user
 app.use(function(err, req, res, next) {
-  res.status(err.status || 500);
-  res.render('error', {
-    message: err.message,
-    error: {}
-  });
+  // res.status(err.status || 500);
+  // res.render('error', {
+  //   message: err.message,
+  //   error: {}
+  // });
+  console.error(err);
 });
 
 

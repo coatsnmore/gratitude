@@ -24,13 +24,8 @@ TaskList.prototype = {
                 throw (err);
             }
 
-            res.render('index', {
-                title: 'My ToDo List ',
-                tasks: items
-            });
-
-              // res.setHeader('Content-Type', 'application/json');
-              // res.send(JSON.stringify(items));
+              res.setHeader('Content-Type', 'application/json');
+              res.send(JSON.stringify(items));
 
         });
     },
