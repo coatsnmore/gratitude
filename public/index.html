@@ -6,21 +6,25 @@
 
 
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script> -->
   <script src="index.js"></script>
   <script src="components/hero/heroDetail.js"></script>
   <script src="components/journal/journal.js"></script>
+  <script src="components/gratitude/gratitude.js"></script>
 
 
 
 </head>
 <body ng-app="gratitude">
+  <gratitude></gratitude>
   <!-- components match only elements -->
-<div ng-controller="mainCtrl as ctrl">
+<!-- <div ng-controller="mainCtrl as ctrl">
   <b>Hero</b><br>
   <hero-detail hero="ctrl.hero"></hero-detail>
-  <journal></journal>
-</div>
+  <!-- <journal></journal> -->
+<!-- </div> -->
+
+<!-- <div ui-view></div> -->
 </body>
 </html>
 
