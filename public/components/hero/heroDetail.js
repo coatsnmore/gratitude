@@ -4,7 +4,7 @@ function HeroDetailController() {
 
 }
 
-angular.module('heroApp').component('heroDetail', {
+angular.module('gratitude').component('heroDetail', {
   templateUrl: 'components/hero/heroDetail.html',
   controller: HeroDetailController,
   bindings: {

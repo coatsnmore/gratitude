@@ -1,9 +1,14 @@
 (function(angular) {
   'use strict';
-angular.module('gratitude', []).controller('mainCtrl', function() {
-  this.hero = {
-    name: 'Spawn'
-  };
+function GratitudeController() {
+
+}
+
+angular.module('gratitude').component('journal', {
+  templateUrl: 'components/journal/journal.html',
+  controller: GratitudeController,
+  bindings: {
+  }
 });
 })(window.angular);
 

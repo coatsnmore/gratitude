@@ -43,6 +43,7 @@ taskDao.init();
 // });
 
 app.get('/api/tasks', taskList.showTasks.bind(taskList));
+app.get('/api/gratitudes', taskList.showTasks.bind(taskList));
 // app.post('/addtask', taskList.addTask.bind(taskList));
 // app.post('/completetask', taskList.completeTask.bind(taskList));
 // app.set('view engine', 'jade');
