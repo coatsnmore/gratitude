@@ -18,15 +18,15 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static('public'));
 //
-// var docDbClient = new DocumentDBClient(config.host, {
-//     masterKey: config.authKey
-// });
-// var taskDao = new TaskDao(docDbClient, config.databaseId, config.collectionId);
-// var taskList = new TaskList(taskDao);
-// taskDao.init();
-//
-// app.get('/api/tasks', taskList.showTasks.bind(taskList));
-// app.get('/api/gratitudes', taskList.showTasks.bind(taskList));
+var docDbClient = new DocumentDBClient(config.host, {
+    masterKey: config.authKey
+});
+var taskDao = new TaskDao(docDbClient, config.databaseId, config.collectionId);
+var taskList = new TaskList(taskDao);
+taskDao.init();
+
+app.get('/api/tasks', taskList.showTasks.bind(taskList));
+app.get('/api/gratitudes', taskList.showTasks.bind(taskList));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
