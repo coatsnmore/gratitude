@@ -3,9 +3,11 @@
  */
 angular.module('gratitude').controller('WelcomeController', ['$scope', '$location',
 	function($scope, $location) {
-		$scope.journal = function (){
-      console.log('asdf');
-      $location.path('/journal');
+		$scope.select = function (){
+      $location.path('/select');
+    };
+    $scope.login = function (){
+      $location.path('/login');
     };
 	}
 ]);

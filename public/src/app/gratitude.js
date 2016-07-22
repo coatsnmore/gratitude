@@ -5,6 +5,16 @@ angular.module('gratitude', ['ngRoute', 'ngResource']).config(['$routeProvider',
 		controller: 'JournalController'
 	});
 
+	$routeProvider.when('/login', {
+		templateUrl: 'fragments/login.html',
+		controller: 'LoginController'
+	});
+
+	$routeProvider.when('/select', {
+		templateUrl: 'fragments/select.html',
+		controller: 'SelectController'
+	});
+
 	$routeProvider.otherwise({
 		templateUrl: 'fragments/welcome.html',
 		controller: 'WelcomeController'
