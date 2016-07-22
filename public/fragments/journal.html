@@ -9,27 +9,23 @@
 
 <div class="form-group">
 	<div class="input-group">
-		<span>
-			<div class="numberCircle">1</div>
-		</span>
+		<!-- <span> -->
+			<span class="numberCircle">1</span>
+		<!-- </span> -->
    <input type="text" ng-model="journal.gratitude1" class="form-control" placeholder="I am thankful for..."></input>
    <span class="input-group-btn">
         <button class="btn btn-default" type="button">Share!</button>
    </span>
 	</div>
 	<div class="input-group">
-		<span>
-			<div class="numberCircle">2</div>
-		</span>
+		<span class="numberCircle">2</span>
    <input type="text" ng-model="journal.gratitude1" class="form-control" placeholder="I am thankful for..."></input>
    <span class="input-group-btn">
         <button class="btn btn-default" type="button">Share!</button>
    </span>
 	</div>
 	<div class="input-group">
-		<span>
-			<div class="numberCircle">3</div>
-		</span>
+		<span class="numberCircle">3</span>
    <input type="text" ng-model="journal.gratitude1" class="form-control" placeholder="I am thankful for..."></input>
    <span class="input-group-btn">
         <button class="btn btn-default" type="button">Share!</button>
@@ -48,10 +44,7 @@
        <!-- <span ng-bind="date" class="form-control" style="display: block; margin-top: 5px;"></span> -->
    </div>
 
-   <!-- <div class="center">
-      <input type="submit" value="Submit"
-        class="btn btn-primary pull-right top-buffer"></input>
-    </div> -->
+
 
  </form>
 <img src="images/MoodSelector-01.svg" class="mood-logo"></img>
@@ -60,6 +53,11 @@
   <img class="grat-logo-color" src="images/GrAttitude_Logo_Color-01.svg"></img>
 </div>
 </section>
+
+<div class="journal-submit">
+   <input type="submit" value="Submit"
+     class="btn btn-primary pull-right top-buffer"></input>
+ </div>
 
 <!-- <section id="history">
 Gratitudes: {{allGratitudes}}
