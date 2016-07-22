@@ -1,5 +1,7 @@
 # todo app
 
+[![Join the chat at https://gitter.im/coatsnmore/gratitude](https://badges.gitter.im/coatsnmore/gratitude.svg)](https://gitter.im/coatsnmore/gratitude?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## simple tech
 
 * npm
