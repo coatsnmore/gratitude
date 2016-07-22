@@ -1,11 +1,10 @@
 <section id="journal" class="journalEntry">
 
-  <form name="journalForm" ng-submit="journal()">
+  <!-- <form name="journalForm" ng-submit="journal()"> -->
 <!-- <center>     -->
-  <img src="images/Pencil_Icon-01.svg" class="pencil-logo"></img>
     <img src="images/Gratitude_SMALL.jpg" class="grat-logo-small"></img>
 <!-- </center> -->
-  <div style="color: #7dc74d;" class="text-center journal-title" >NEW JOURNAL ENTRY</div>
+  <div style="color: #7dc74d;" class="text-center journal-title" >JOURNAL ENTRIES LOGGED</div>
 
 <div class="form-group">
 	<div class="input-group">
@@ -14,55 +13,29 @@
 		<!-- </span> -->
    <input type="text" ng-model="journal.gratitude1" class="form-control" placeholder="I am thankful for..."></input>
    <span class="input-group-btn">
-        <button class="share-button" type="button">Share!</button>
+        <button class="btn btn-default" type="button">Share!</button>
    </span>
 	</div>
 	<div class="input-group">
 		<span class="numberCircle">2</span>
    <input type="text" ng-model="journal.gratitude2" class="form-control" placeholder="I am thankful for..."></input>
    <span class="input-group-btn">
-        <button class="share-button" type="button">Share!</button>
+        <button class="btn btn-default" type="button">Share!</button>
    </span>
 	</div>
 	<div class="input-group">
 		<span class="numberCircle">3</span>
    <input type="text" ng-model="journal.gratitude3" class="form-control" placeholder="I am thankful for..."></input>
    <span class="input-group-btn">
-        <button class="share-button" type="button">Share!</button>
+        <button class="btn btn-default" type="button">Share!</button>
    </span>
 	</div>
 </div>
 
-<!-- <date-picker ng-model="date"></date-picker>
 
-<input type="text" ng-model="date"> -->
-
-<div class="form-group">
-  Date:
-       <ng-datepicker ng-model="journal.date" class="form-control">
-     </ng-datepicker>
-       <!-- <span ng-bind="date" class="form-control" style="display: block; margin-top: 5px;"></span> -->
-   </div>
-
-
-
-
-<img src="images/MoodSelector-01.svg" class="mood-logo"></img>
+ <!-- </form> -->
 <div class="journal-footer">
   <img src="images/Return_Button-01.svg" class="return-logo"></img>
   <img class="grat-logo-color" src="images/GrAttitude_Logo_Color-01.svg"></img>
 </div>
-
-
-<div class="journal-submit">
-   <input type="submit" value="Submit"
-     class="btn btn-primary pull-right top-buffer"></input>
- </div>
-
- </form>
- </section>
-
-<!-- <section id="history">
-Gratitudes: {{allGratitudes}}
-</section> -->
-<!-- <button ng-click="getAllGratitudes()">Get all gratitudes</button -->
+</section>

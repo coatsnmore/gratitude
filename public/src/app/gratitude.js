@@ -5,6 +5,11 @@ angular.module('gratitude', ['ngRoute', 'ngResource','jkuri.datepicker']).config
 		controller: 'JournalController'
 	});
 
+	$routeProvider.when('/journal-entries', {
+		templateUrl: 'fragments/journal-entries.html',
+		controller: 'JournalEntriesController'
+	});
+
 	$routeProvider.when('/login', {
 		templateUrl: 'fragments/login.html',
 		controller: 'LoginController'
