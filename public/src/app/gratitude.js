@@ -6,6 +6,7 @@ angular.module('gratitude', ['ngRoute', 'ngResource']).config(['$routeProvider',
 	});
 
 	$routeProvider.otherwise({
-		templateUrl: 'fragments/welcome.html'
+		templateUrl: 'fragments/welcome.html',
+		controller: 'WelcomeController'
 	});
 }]);
