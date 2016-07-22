@@ -13,8 +13,12 @@ body,html, input {
 }
 
 .journalEntry input {
-	width: 90% !important;
+	width: 85% !important;
 	margin: 5px;
+}
+
+.journal-submit {
+	width: 100% !important;
 }
 
 .numberCircle {
@@ -67,8 +71,8 @@ top: 2%;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-	right: 55%;
-	top: 40%;
+		right: 0px;
+    top: 0px;
 }
 
 .share-button:hover {
