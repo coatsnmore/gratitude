@@ -1,8 +1,11 @@
 <section id="journal" class="journalEntry">
 
   <form name="journalForm" ng-submit="journal()">
-
-  <div style="color: #7dc74d;" class="text-center page-title">NEW JOURNAL ENTRY</div>
+<!-- <center>     -->
+  <img src="images/Pencil_Icon-01.svg" class="pencil-logo"></img>
+    <img src="images/Gratitude_SMALL.jpg" class="grat-logo-small"></img>
+<!-- </center> -->
+  <div style="color: #7dc74d;" class="text-center journal-title" >NEW JOURNAL ENTRY</div>
 
 <div class="form-group">
   1. <input type="text" ng-model="journal.gratitude1" class="form-control" placeholder="I am thankful for..."></input>
@@ -21,16 +24,20 @@
        <!-- <span ng-bind="date" class="form-control" style="display: block; margin-top: 5px;"></span> -->
    </div>
 
-   <div class="center">
+   <!-- <div class="center">
       <input type="submit" value="Submit"
         class="btn btn-primary pull-right top-buffer"></input>
-    </div>
+    </div> -->
 
  </form>
-
+<img src="images/MoodSelector-01.svg" class="mood-logo"></img>
+<div class="journal-footer">
+  <img src="images/Return_Button-01.svg" class="return-logo"></img>
+  <img class="grat-logo-color" src="images/GrAttitude_Logo_Color-01.svg"></img>
+</div>
 </section>
 
-<section id="history">
+<!-- <section id="history">
 Gratitudes: {{allGratitudes}}
-</section>
+</section> -->
 <!-- <button ng-click="getAllGratitudes()">Get all gratitudes</button -->

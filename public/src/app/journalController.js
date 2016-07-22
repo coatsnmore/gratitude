@@ -9,6 +9,7 @@ angular.module('gratitude').controller('JournalController', ['$scope','gratitude
 		$scope.journal.gratitude1 = '';
 		$scope.journal.gratitude2 = '';
 		$scope.journal.gratitude3 = '';
+		$scope.journal.date = '2016-07-22';
 		// $scope.date = Date.now();
 
 		// $scope.getAllGratitudes = function (){
