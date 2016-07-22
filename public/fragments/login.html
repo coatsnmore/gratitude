@@ -1,25 +1,22 @@
-<div>
-	<form name="loginForm" ng-submit="login()">
-		<div class="vert-spacer"></div>
-		<div
-			class="container col-sm-4 col-sm-offset-4 col-xs-10 col-xs-offset-1 vert-ctr">
-			<div class="col-xs-12">
-				<h1 class="text-center ">Password</h1>
-				<h1 class="text-center">Vault</h1>
+<div class="gratitude-app">
+	<form name="loginForm" class="login-form" ng-submit="login()">
+		<!-- <div class="vert-spacer"></div> -->
+		<div>
+			<div>
+				<img src="images/GrAttitude_Logo.svg" class="grat-logo"></img>
 			</div>
-			<div class="center ">
+			<div class="form-group">
 				<input ng-model="userName" type="text"
-					placeholder="Enter User Name" class="center">
-			</div>
-			</br>
-			<div class="center">
+					placeholder="User Name" class="form-control login-input">
 				<input ng-model="credentials.password" type="password"
-					placeholder="Enter Access Code">
+						placeholder="Password" class="form-control login-input">
+				<input type="submit" value="Login"
+							class="btn btn-primary" class="form-control login-input"></input>
 			</div>
-			<div class="center">
-				<input type="submit" value="Submit"
-					class="btn btn-primary pull-right top-buffer"></input>
+			<div>
+				<img src="images/Nationwide_Logo.svg" class="nw-logo"></img>
 			</div>
+
 		</div>
 	</form>
 </div>

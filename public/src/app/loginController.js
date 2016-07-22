@@ -12,6 +12,7 @@ angular.module('gratitude').controller('LoginController', ['$scope', '$location'
 		$scope.login = function (){
 			console.log('un: ' + $scope.userName);
 			console.log('pw: ' + $scope.password);
+			$location.path('/journal');
 		};
 	}
 ]);

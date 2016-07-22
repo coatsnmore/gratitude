@@ -7,8 +7,50 @@ body,html, input {
 	width : 100%;
 	height: 100%;
 	margin: 0 auto;
+	background-color:transparent;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	color: black;
+}
+
+.gratitude-app {
+	background-color: #7dc74d;
+	height: 100vh;
+}
+
+.grat-logo {
+	height: 50vh;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.nw-logo {
+	height: 30vh;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.container{
+	margin:none;
+	padding-left: auto;
+	padding-right: auto;
+}
+
+.login-input {
+	margin-bottom: 15px;
+}
+
+.login-form {
+margin-left: 3em;
+margin-right: 3em;
+}
+
+.page-title {
+	font: 20px;
+}
+
+
+.ng-datepicker-input {
+	border: none;
 }
 
 button {
