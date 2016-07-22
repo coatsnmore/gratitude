@@ -1,4 +1,4 @@
-angular.module('gratitude', ['ngRoute', 'ngResource']).config(['$routeProvider', function($routeProvider) {
+angular.module('gratitude', ['ngRoute', 'ngResource','jkuri.datepicker']).config(['$routeProvider', function($routeProvider) {
 
 	$routeProvider.when('/journal', {
 		templateUrl: 'fragments/journal.html',
@@ -14,12 +14,12 @@ angular.module('gratitude', ['ngRoute', 'ngResource']).config(['$routeProvider',
 		templateUrl: 'fragments/select.html',
 		controller: 'SelectController'
 	});
-	
+
 	$routeProvider.when('/share', {
 		templateUrl: 'fragments/share.html',
 		controller: 'ShareController'
 	});
-	
+
 	$routeProvider.when('/why', {
 		templateUrl: 'fragments/why.html',
 		controller: 'WhyController'

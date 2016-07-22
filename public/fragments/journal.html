@@ -1,21 +1,30 @@
 <section id="journal" class="journalEntry">
+
+  <form name="journalForm" ng-submit="journal()">
 New Journal Entry
 <div class="form-group">
-  <input type="text" ng-model="gratitude1" class="form-control"></input>
-  <input type="text" ng-model="gratitude2" class="form-control"></input>
-  <input type="text" ng-model="gratitude3" class="form-control"></input>
+  1. <input type="text" ng-model="journal.gratitude1" class="form-control" placeholder="I am thankful for..."></input>
+  2. <input type="text" ng-model="journal.gratitude2" class="form-control" placeholder="I am thankful for..."></input>
+  3. <input type="text" ng-model="journal.gratitude3" class="form-control" placeholder="I am thankful for..."></input>
 </div>
 
 <!-- <date-picker ng-model="date"></date-picker>
 
 <input type="text" ng-model="date"> -->
 
-<div>
-
-       <ng-datepicker ng-model="date">
+<div class="form-group">
+  Date:
+       <ng-datepicker ng-model="journal.date" class="form-control">
        </ng-datepicker>
-       <span ng-bind="date" style="display: block; margin-top: 5px;"></span>
+       <!-- <span ng-bind="date" class="form-control" style="display: block; margin-top: 5px;"></span> -->
    </div>
+
+   <div class="center">
+      <input type="submit" value="Submit"
+        class="btn btn-primary pull-right top-buffer"></input>
+    </div>
+
+ </form>
 
 </section>
 
