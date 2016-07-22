@@ -1,4 +1,25 @@
-<span>{{username}}, here's your journal!!</span>
+<section id="journal" class="journalEntry">
+New Journal Entry
+<div class="form-group">
+  <input type="text" ng-model="gratitude1" class="form-control"></input>
+  <input type="text" ng-model="gratitude2" class="form-control"></input>
+  <input type="text" ng-model="gratitude3" class="form-control"></input>
+</div>
 
+<!-- <date-picker ng-model="date"></date-picker>
+
+<input type="text" ng-model="date"> -->
+
+<div>
+
+       <ng-datepicker ng-model="date">
+       </ng-datepicker>
+       <span ng-bind="date" style="display: block; margin-top: 5px;"></span>
+   </div>
+
+</section>
+
+<section id="history">
 Gratitudes: {{allGratitudes}}
+</section>
 <!-- <button ng-click="getAllGratitudes()">Get all gratitudes</button -->

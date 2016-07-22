@@ -10,8 +10,8 @@ angular.module('gratitude').controller('LoginController', ['$scope', '$location'
 		$scope.password = null;
 
 		$scope.login = function (){
-			console.log('un: ' + userName);
-			console.log('pw: ' + password);
+			console.log('un: ' + $scope.userName);
+			console.log('pw: ' + $scope.password);
 		};
 	}
 ]);
