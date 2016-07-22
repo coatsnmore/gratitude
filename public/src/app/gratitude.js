@@ -14,6 +14,16 @@ angular.module('gratitude', ['ngRoute', 'ngResource']).config(['$routeProvider',
 		templateUrl: 'fragments/select.html',
 		controller: 'SelectController'
 	});
+	
+	$routeProvider.when('/share', {
+		templateUrl: 'fragments/share.html',
+		controller: 'ShareController'
+	});
+	
+	$routeProvider.when('/why', {
+		templateUrl: 'fragments/why.html',
+		controller: 'WhyController'
+	});
 
 	$routeProvider.otherwise({
 		templateUrl: 'fragments/welcome.html',

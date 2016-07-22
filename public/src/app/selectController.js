@@ -3,8 +3,14 @@
  */
 angular.module('gratitude').controller('SelectController', ['$scope', '$location',
 	function($scope, $location) {
-		// $scope.select = function (){
-    //   $location.path('/select');
-    // };
+		$scope.why = function (){
+      $location.path('/why');
+    };
+    $scope.share = function (){
+      $location.path('/share');
+    };
+	$scope.journal = function(){
+		$location.path('/journal');
+	};
 	}
 ]);
