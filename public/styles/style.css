@@ -12,6 +12,10 @@ body,html, input {
 	color: black;
 }
 
+.intro-seq {
+		width:100%;
+}
+
 .pencil-logo {
 	z-index: 3;
 	/*margin-top: 3em;*/
